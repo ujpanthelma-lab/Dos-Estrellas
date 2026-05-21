@@ -1,13 +1,12 @@
-/* --- CONFIGURACIÓN GENERAL --- */
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #fcedea; /* Fondo rosa pastel elegante general */
+    background-color: #fcedea;
     margin: 0;
     padding: 0;
     color: #333;
 }
 
-/* --- PORTADA NUEVA (ESTILO LUXE NAILS) --- */
 .hero {
     display: flex;
     align-items: center;
@@ -32,7 +31,7 @@ body {
 }
 
 .hero-texto h1 span {
-    color: #c24d81; /* Nombre del salón destacado */
+    color: #c24d81;
 }
 
 .hero-texto p {
@@ -72,7 +71,6 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-/* --- MENÚ DE BOTONES INTERMEDIOS --- */
 .botones {
     margin: 30px 0;
     text-align: center;
@@ -97,9 +95,8 @@ body {
     transform: scale(1.05);
 }
 
-/* --- BLOQUE DE CONTENIDO GENERAL (PESTAÑAS) --- */
 .contenido {
-    display: none; /* Oculto por defecto hasta presionar botón */
+    display: none;
     background: white;
     max-width: 900px;
     margin: 30px auto;
@@ -109,7 +106,6 @@ body {
     text-align: center;
 }
 
-/* Títulos con óvalo rosa */
 .encabezado-rosa h2 {
     background-color: #d188a4; 
     color: white;
@@ -127,7 +123,6 @@ body {
     font-size: 16px;
 }
 
-/* --- ESTILOS DE LA SECCIÓN: SERVICIOS --- */
 .servicios-container {
     display: flex;
     flex-wrap: wrap;
@@ -170,7 +165,6 @@ body {
     font-size: 0.8rem;
 }
 
-/* --- ESTILOS DE LA SECCIÓN: PROMOCIONES --- */
 .contenedor-dos-columnas {
     display: flex;
     flex-wrap: wrap;
@@ -200,7 +194,6 @@ body {
     margin-right: 10px;
 }
 
-/* --- ESTILOS DE LA SECCIÓN: CÓMO TRABAJAMOS --- */
 .servicio-fila {
     display: flex;
     align-items: center;
