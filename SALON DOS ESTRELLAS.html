@@ -1,66 +1,35 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Salon Dos Estrellas</title>
-
     <link rel="stylesheet" href="ESTILO CSS.css">
-
 </head>
-
 <body>
 
-<header>
-
-    <h1>Salon de Belleza Dos Estrellas</h1>
-
-    <p>Será un gusto ayudarte a resaltar tu belleza </p>
-
-</div>
-
+<header class="hero">
+    <div class="hero-texto">
+        <h1>Salon de Belleza<br><span>Dos Estrellas</span></h1>
+        <p>Será un gusto ayudarte a resaltar tu belleza con el mejor cuidado y atención para tus momentos especiales.</p>
+        <button class="btn-descubre" onclick="mostrar('servicios')">Descubre más</button>
+    </div>
+    <div class="hero-imagen">
+        <img src="uñas.jpg.jpeg" alt="Portada Salon">
+    </div>
 </header>
 
 <div class="botones">
-
-    <button onclick="mostrar('servicios')">
-
-        Servicios
-
-    </button>
-
-    <button onclick="mostrar('ubicacion')">
-
-        Ubicación
-
-    </button>
-
-    <button onclick="mostrar('promociones')">
-
-        Promociones
-
-    </button>
-
-    <button onclick="mostrar('trabajo')">
-
-        ¿Cómo es nuestro trabajo?
-
-    </button>
-
+    <button onclick="mostrar('servicios')">Servicios</button>
+    <button onclick="mostrar('ubicacion')">Ubicación</button>
+    <button onclick="mostrar('promociones')">Promociones</button>
+    <button onclick="mostrar('trabajo')">¿Cómo es nuestro trabajo?</button>
 </div>
 
-
-<!-- SERVICIOS -->
 <div id="servicios" class="contenido">
-
-    <div class="encabezado-rosa"></div>
-    <h2>Servicios</h2>
-
+    <div class="encabezado-rosa">
+        <h2>Servicios</h2>
+    </div>
     <div class="servicios-container">
         <div class="columna">
             <h3 class="titulo-categoria">Manos y Pies</h3>
@@ -113,49 +82,27 @@
     </div>
 </div>
 
-
-<!-- UBICACION -->
-
 <div id="ubicacion" class="contenido">
-
-    <div class="encabezado-rosa"></div>
-
-    <h2>Ubicación</h2>
-    <p>Nuestro salón de belleza está ubicado en un lugar accesible y seguro, pensado para que
-    todas nuestras clientas puedan llegar fácilmente y disfrutar de una experiencia
-    cómoda y relajante. Nos esforzamos por ofrecer un ambiente agradable donde puedas
-    sentirte en confianza desde el momento en que entras.
-    </p>
+    <div class="encabezado-rosa">
+        <h2>Ubicación</h2>
+    </div>
+    <p class="intro-texto">Nuestro salón de belleza está ubicado en un lugar accesible y seguro, pensado para que todas nuestras clientas puedan llegar fácilmente y disfrutar de una experiencia cómoda y relajante. Nos esmeramos por ofrecer un ambiente agradable donde puedas sentirte en confianza desde el momento en que entras.</p>
+    
     <p><b>Sucursal 1:</b> Cantón Central, San Juan La Laguna</p>
-
-    <img src="sucursal1.jpg.jpeg" width="800">
+    <img src="sucursal1.jpg.jpeg" style="max-width:100%; height:auto; border-radius:10px; margin-bottom:20px;">
 
     <p><b>Sucursal 2:</b> Cantón Chuitinamit, San Juan La Laguna</p>
+    <img src="sucursal2.jpg.jpeg" style="max-width:100%; height:auto; border-radius:10px; margin-bottom:20px;">
 
-    <img src="sucursal2.jpg.jpeg" width="800">
-
-    <p> Ambas sucursales están diseñadas para brindarte un servicio de calidad, 
-    con espacios limpios, ordenados y equipados con todo lo necesario para tu 
-    cuidado personal y belleza. Nuestro objetivo es que cada visita sea una experiencia
-     especial.
-Además, nuestras ubicaciones se encuentran en zonas conocidas de la comunidad, lo que
- facilita el acceso tanto a pie como en transporte. Siempre estamos cerca para atenderte
-  cuando lo necesites.
-    </p>
-    <p> Lunes a sábado de 8:00 a.m a 6:00 p.m</p> 
-
-    <p>Sera un gusto atenderte y ayudarte a resaltar tu belleza </p>
-
+    <p class="intro-texto">Ambas sucursales están diseñadas para brindarte un servicio de calidad, con espacios limpios, ordenados y equipados con todo lo necesario para tu cuidado personal y belleza. Nuestro objetivo es que cada visita sea una experiencia especial.</p>
+    <p><b>Horario:</b> Lunes a sábado de 8:00 a.m a 6:00 p.m</p> 
 </div>
 
-<!-- PROMOCIONES -->
-
 <div id="promociones" class="contenido">
-
-    <div class="encabezado-rosa"></div>
-
-    <h2>Promociones</h2>
-    <p class="texto-intro">En nuestro salón de belleza siempre buscamos consentir a nuestras clientas, por eso contamos con promociones especiales durante todo el año. Estas ofertas están diseñadas para que puedas disfrutar de nuestros servicios de alta calidad a precios accesibles, sin dejar de lado el buen trato y la atención personalizada que nos caracteriza.</p>
+    <div class="encabezado-rosa">
+        <h2>Promociones</h2>
+    </div>
+    <p class="texto-intro">En nuestro salón de belleza siempre buscamos consentir a nuestras clientas, por eso contamos con promociones especiales durante todo el año. Estas ofertas están diseñadas para que puedas disfrutar de nuestros servicios de alta calidad a precios accesibles.</p>
 
     <div class="contenedor-dos-columnas">
         <ul class="columna-promos">
@@ -195,31 +142,17 @@ Además, nuestras ubicaciones se encuentran en zonas conocidas de la comunidad, 
         </ul>
     </div>
 </div>
-<!-- COMO ES NUESTRO TRABAJO -->
 
 <div id="trabajo" class="contenido">
-    
     <div class="encabezado-rosa">
         <h2>¿CÓMO ES NUESTRO TRABAJO?</h2>
     </div>
 
     <p class="intro-texto">
-        En nuestro salón de belleza trabajamos con dedicación, cuidado y responsabilidad para
-         ofrecer servicios de alta calidad a cada clienta. Nos enfocamos en resaltar la 
-         belleza natural de cada persona, brindando una atención personalizada según sus 
-         gustos y necesidades.
-        Antes de iniciar cualquier servicio, escuchamos lo que la clienta desea para poder 
-        darle la mejor recomendación. Utilizamos productos de buena calidad y mantenemos 
-        siempre la higiene y limpieza en todas nuestras áreas de trabajo. 
-        También nos guiamos por las tendencias actuales, pero siempre respetando el estilo 
-        de cada clienta. Nuestro objetivo es que cada persona se sienta cómoda, segura y 
-        satisfecha con el resultado final.
+        En nuestro salón de belleza trabajamos con dedicación, cuidado y responsabilidad para ofrecer servicios de alta calidad a cada clienta. Nos enfocamos en resaltar la belleza natural de cada persona, brindando una atención personalizada según sus gustos y necesidades. Utilizamos productos de buena calidad y mantenemos siempre la higiene y limpieza en todas nuestras áreas de trabajo.
     </p>
 
     <div class="lista-servicios">
-
-        <div class="encabezado-rosa"></div>
-
         <div class="servicio-fila">
             <img src="pedicure.jpg.jpeg" alt="Pedicure">
             <p>Pedicure realizado con cuidado y dedicación</p>
@@ -249,28 +182,18 @@ Además, nuestras ubicaciones se encuentran en zonas conocidas de la comunidad, 
             <img src="lifting.jpg.jpeg" alt="Pestañas">
             <p>Aplicación de pestañas postizas.</p>
         </div>
-
     </div>
 </div>
 
 <script>
-
 function mostrar(seccion){
-
     document.getElementById("servicios").style.display = "none";
-
     document.getElementById("ubicacion").style.display = "none";
-
     document.getElementById("promociones").style.display = "none";
-
     document.getElementById("trabajo").style.display = "none";
-
     document.getElementById(seccion).style.display = "block";
-
 }
-
 </script>
 
 </body>
-
 </html>
