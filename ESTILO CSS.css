@@ -1,114 +1,144 @@
-
-body{
-
-    font-family: Arial, sans-serif;
-
-    background-image: url("fondosalon.jpg.jpeg");
-
-    background-size:cover;
-
-    background-position: center;
-
-    background-repeat: no-repeat;
-
-    background-attachment: fixed;
-
-    margin:0;
-
-    padding:0;
-
-    text-align:center;
-
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fcedea; /* Fondo rosa pastel elegante general */
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-.contenido{
-
-    display:none;
-
-    background: rgba(255,255,255,0.85);
-
-    width:80%;
-
-    margin:auto;
-
-    padding:15px;
-
-    border-radius:10px;
-
-    box-shadow:0 0 5px rgba(0,0,0,0.2);
-
+/* --- PORTADA NUEVA (ESTILO LUXE NAILS) --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background-color: #fcedea;
+    min-height: 75vh;
+    text-align: left;
 }
 
-h1{
-
-    margin:0;
-
+.hero-texto {
+    flex: 1;
+    padding-right: 40px;
 }
 
-.botones{
-
-    margin:20px;
-
+.hero-texto h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    font-family: 'Georgia', serif;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
 }
 
-button{
-
-    background:#ff69b4;
-
-    color:rgb(21, 20, 20);
-
-    border:none;
-
-    padding:12px 20px;
-
-    margin:10px;
-
-    border-radius:20px;
-
-    cursor:pointer;
-
-    font-size:16px;
-
-    transition:0.3s;
-
+.hero-texto h1 span {
+    color: #c24d81; /* Nombre del salón destacado */
 }
 
-button:hover{
-
-    background:#ff1493;
-
-    transform:scale(1.05);
-
+.hero-texto p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
 
-.contenido{
+.btn-descubre {
+    background-color: #c24d81;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-    display:none;
+.btn-descubre:hover {
+    background-color: #a13b68;
+    transform: translateY(-2px);
+}
 
-    background:white;
+.hero-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
 
-    width:80%;
+.hero-imagen img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 
-    margin:auto;
+/* --- MENÚ DE BOTONES INTERMEDIOS --- */
+.botones {
+    margin: 30px 0;
+    text-align: center;
+}
 
-    padding:20px;
+.botones button {
+    background: white;
+    color: #c24d81;
+    border: 2px solid #c24d81;
+    padding: 10px 22px;
+    margin: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-    border-radius:15px;
+.botones button:hover {
+    background: #c24d81;
+    color: white;
+    transform: scale(1.05);
+}
 
-    box-shadow:0 0 10px rgba(0,0,0,0.2)
-    }
+/* --- BLOQUE DE CONTENIDO GENERAL (PESTAÑAS) --- */
+.contenido {
+    display: none; /* Oculto por defecto hasta presionar botón */
+    background: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
 
+/* Títulos con óvalo rosa */
+.encabezado-rosa h2 {
+    background-color: #d188a4; 
+    color: white;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.intro-texto, .texto-intro {
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #555;
+    font-size: 16px;
+}
+
+/* --- ESTILOS DE LA SECCIÓN: SERVICIOS --- */
 .servicios-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .columna {
     flex: 1;
-    min-width: 250px;
+    min-width: 240px;
     text-align: left;
 }
 
@@ -116,8 +146,9 @@ button:hover{
     color: #c24d81;
     font-size: 1.1rem;
     font-weight: bold;
-    margin-top: 20px;
-    border-bottom: 1px solid #ddd;
+    margin-top: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
 }
 
 .columna ul {
@@ -126,7 +157,7 @@ button:hover{
 }
 
 .columna li {
-    margin: 8px 0;
+    margin: 10px 0;
     font-size: 0.95rem;
     display: flex;
     align-items: center;
@@ -139,17 +170,20 @@ button:hover{
     font-size: 0.8rem;
 }
 
+/* --- ESTILOS DE LA SECCIÓN: PROMOCIONES --- */
 .contenedor-dos-columnas {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 40px; 
-    padding: 20px;
+    gap: 30px; 
+    padding: 10px;
 }
 
 .columna-promos {
     list-style: none; 
     padding: 0;
     flex: 1; 
+    min-width: 280px;
     text-align: left;
 }
 
@@ -166,40 +200,14 @@ button:hover{
     margin-right: 10px;
 }
 
-.texto-intro {
-    padding: 0 30px;
-    margin-bottom: 20px;
-    color: #444;
-}
-
-.contenido {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    font-family: sans-serif;
-}
-
-.encabezado-rosa h2 {
-    background-color: #d188a4; 
-    color: white;
-    display: inline-block;
-    padding: 15px 40px;
-    border-radius: 50px;
-    font-size: 24px;
-}
-
-.intro-texto {
-    margin: 20px 0;
-    line-height: 1.6;
-    color: #444;
-}
-
+/* --- ESTILOS DE LA SECCIÓN: CÓMO TRABAJAMOS --- */
 .servicio-fila {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .servicio-fila.inversa {
@@ -209,53 +217,17 @@ button:hover{
 .servicio-fila img {
     width: 200px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .servicio-fila p {
     font-weight: bold;
     width: 250px;
     text-align: left;
+    margin: 0;
 }
 
 .servicio-fila.inversa p {
     text-align: right;
-}
-
-header {
-    background: linear-gradient(rgba(253,63,148,0.8), rgba(253,63,148,0.8)), url("fondosalon.jpg.jpeg");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 60px 20px;
-}
-
-.inicio-contenido {
-    margin-top: 20px;
-}
-
-.inicio-contenido h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.inicio-contenido p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.inicio-contenido button {
-    background: white;
-    color: #fd3f94;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.inicio-contenido button:hover {
-    background: #ffe4f0;
-    transform: scale(1.05);
 }
