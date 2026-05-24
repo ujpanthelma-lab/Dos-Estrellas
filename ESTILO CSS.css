@@ -224,3 +224,51 @@ body {
 .servicio-fila.inversa p {
     text-align: right;
 }
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .hero-texto {
+        padding-right: 0;
+    }
+
+    .hero-texto h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-imagen img {
+        max-width: 100%;
+    }
+
+    .botones button {
+        width: 90%;
+    }
+
+    .contenido {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .servicios-container,
+    .contenedor-dos-columnas,
+    .servicio-fila,
+    .servicio-fila.inversa {
+        flex-direction: column;
+    }
+
+    .servicio-fila p,
+    .servicio-fila.inversa p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-fila img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
