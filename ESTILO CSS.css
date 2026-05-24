@@ -68,7 +68,18 @@ body {
     max-width: 90%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: 1px solid #c24d81;
+    box-shadow: 
+        0 0 15px rgba(194, 77, 129, 0.4), 
+        0 0 30px rgba(194, 77, 129, 0.2);
+    transition: all 0.4s ease-in-out;
+}
+
+.hero-imagen img:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 
+        0 0 25px rgba(194, 77, 129, 0.7), 
+        0 0 45px rgba(194, 77, 129, 0.4);
 }
 
 .botones {
@@ -102,8 +113,19 @@ body {
     margin: 30px auto;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     text-align: center;
+    
+    border: 1px solid #c24d81;
+    box-shadow: 
+        0 0 15px rgba(194, 77, 129, 0.3), 
+        0 0 30px rgba(194, 77, 129, 0.15);
+    transition: all 0.4s ease-in-out;
+}
+
+.contenido:hover {
+    box-shadow: 
+        0 0 25px rgba(194, 77, 129, 0.6), 
+        0 0 45px rgba(194, 77, 129, 0.3);
 }
 
 .encabezado-rosa h2 {
