@@ -287,4 +287,66 @@ body {
         width: 100%;
         max-width: 300px;
     }
+
+    .profile-actions {
+        align-items: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+.profile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border: 2px solid #c24d81; 
+    border-radius: 50%;
+    color: #c24d81;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.icon-link:hover {
+    background-color: #c24d81;
+    color: white;
+    box-shadow: 0 0 15px rgba(194, 77, 129, 0.6);
+    transform: translateY(-3px);
+}
+
+.btn-descubre-brillo {
+    display: inline-block;
+    width: max-content;
+    background-color: #c24d81;
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px; 
+    box-shadow: 0 0 20px rgba(194, 77, 129, 0.5); 
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.btn-descubre-brillo:hover {
+    background-color: #a13b68;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(194, 77, 129, 0.8);
 }
